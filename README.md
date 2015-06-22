@@ -65,7 +65,7 @@ class SampleParameters gives following information:
 
 SampleService is the service class, it should provide following two static function:
 - get_parameters: Aimple return SampleParameters class
-- on_get: The parameter http_parameters is an map, the key of this map is the parameter name defined in SampleParameters, the value is the value given in the request url, which already converted to the read type. For instance, the value of parameter1 here will be integer value, not a string.
+- on_get: The parameter http_parameters is a dictionary, the keys are the parameter names defined in SampleParameters, the values are the value given in the request url, which are already converted to the real type. For instance, the value of parameter1 here will be integer value, not a string.
 
 ### Generate the document
 
@@ -82,3 +82,7 @@ if __name__ == '__main__':
 The code above will read some raw documents from doc and generate the html output in doc_html.
 
 After run the doc generator, you will find index.html on doc_html, which is the API document, also some markdown files will be generated on path 'doc'.
+
+## Credicts
+
+https://github.com/uvtc/rippledoc
